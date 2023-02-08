@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'content',
     'user',
     'myinstagram',
@@ -69,6 +70,8 @@ TEMPLATES = [
         },
     },
 ]
+
+print([os.path.join(BASE_DIR, 'templates')])
 
 WSGI_APPLICATION = 'myinstagram.wsgi.application'
 
