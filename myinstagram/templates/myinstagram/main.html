@@ -54,6 +54,21 @@
 </head>
 
 <body>
+
+
+<!--How to get and view data from Content.view-->
+<!--
+  <div>
+    {% for feed in feeds %}
+    <p>{{ feed.content }}</p>
+    <p>{{ feed.user_id }}</p>
+    <p>{{ feed.like_count }}</p>
+
+    {% endfor %}
+
+  </div>
+-->
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; width: 100%">
     <div class="container" style="justify-content: space-between; flex-wrap: nowrap; min-width: 100px">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -83,217 +98,46 @@
     style="display: flex; flex-direction: row; text-align: center; justify-content: center; padding-top: 65px;background: #FAFAFA">
     <div style="min-width: 700px;margin-right: 400px">
 
-      <div class="feed_box">
-        <div style="border: solid 1px #ced4da; background-color: white;">
-          <div style="display: flex; flex-direction: row; align-items: center; margin: 0 20px">
-            <div class="box" style="background: #bdbdbd">
-              <img class="profile"
-                src="http://file3.instiz.net/data/file3/2021/05/31/e/b/8/eb8d9ad2d779ca2a0b7acc2b67694a23.png" alt="">
-            </div>
-            <div>
-              jin.99
-            </div>
-          </div>
-          <div class="imgbox">
-            <img class="imgfit"
-              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/fh3flanm7yzaphwoteu0/Jeju%20Island%20UNESCO%20Day%20Tour%20with%20Hotel%20Pick%20Up.jpg">
-          </div>
-          <div style="margin: 0 20px; display: flex; flex-direction: row; justify-content: space-between">
-            <div>
-              <span class="material-symbols-outlined">favorite</span>
-              <span class="material-symbols-outlined">mode_comment</span>
-              <span class="material-symbols-outlined">send</span>
-            </div>
-            <div>
-              <span class="material-symbols-outlined">bookmark</span>
-            </div>
-          </div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px">춘식이 <b> 위 19명</b>이 좋아합니다</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 16px"><b>jin.99</b> 요줌에 해외여행을 못가니 재주도 많이 갑니다.</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>aaaa</b> 나도 재주도 가고 십다</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>bbbb</b> 재주도에 외국인 관광객이 없어서 놀러가기 좋다던데..
-          </div>
-          <div style="border-top: solid 1px #ced4da;">
-            <input type="text" class="form-control" style="box-shadow: none;border: none" placeholder="댓글 달기..">
-          </div>
-        </div>
-      </div>
-      <div class="feed_box">
-        <div style="border: solid 1px #ced4da; background-color: white;">
-          <div style="display: flex; flex-direction: row; align-items: center; margin: 0 20px">
-            <div class="box" style="background: #bdbdbd">
-              <img class="profile"
-                src="http://file3.instiz.net/data/file3/2021/05/31/e/b/8/eb8d9ad2d779ca2a0b7acc2b67694a23.png" alt="">
-            </div>
-            <div>
-              jin.99
-            </div>
-          </div>
-          <div class="imgbox">
-            <img class="imgfit"
-              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/fh3flanm7yzaphwoteu0/Jeju%20Island%20UNESCO%20Day%20Tour%20with%20Hotel%20Pick%20Up.jpg">
-          </div>
-          <div style="margin: 0 20px; display: flex; flex-direction: row; justify-content: space-between">
-            <div>
-              <span class="material-symbols-outlined">favorite</span>
-              <span class="material-symbols-outlined">mode_comment</span>
-              <span class="material-symbols-outlined">send</span>
-            </div>
-            <div>
-              <span class="material-symbols-outlined">bookmark</span>
-            </div>
-          </div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px">춘식이 <b> 위 19명</b>이 좋아합니다</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 16px"><b>jin.99</b> 요줌에 해외여행을 못가니 재주도 많이 갑니다.</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>aaaa</b> 나도 재주도 가고 십다</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>bbbb</b> 재주도에 외국인 관광객이 없어서 놀러가기 좋다던데..
-          </div>
-          <div style="border-top: solid 1px #ced4da;">
-            <input type="text" class="form-control" style="box-shadow: none;border: none" placeholder="댓글 달기..">
-          </div>
-        </div>
-      </div>
-      <div class="feed_box">
-        <div style="border: solid 1px #ced4da; background-color: white;">
-          <div style="display: flex; flex-direction: row; align-items: center; margin: 0 20px">
-            <div class="box" style="background: #bdbdbd">
-              <img class="profile"
-                src="http://file3.instiz.net/data/file3/2021/05/31/e/b/8/eb8d9ad2d779ca2a0b7acc2b67694a23.png" alt="">
-            </div>
-            <div>
-              jin.99
-            </div>
-          </div>
-          <div class="imgbox">
-            <img class="imgfit"
-              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/fh3flanm7yzaphwoteu0/Jeju%20Island%20UNESCO%20Day%20Tour%20with%20Hotel%20Pick%20Up.jpg">
-          </div>
-          <div style="margin: 0 20px; display: flex; flex-direction: row; justify-content: space-between">
-            <div>
-              <span class="material-symbols-outlined">favorite</span>
-              <span class="material-symbols-outlined">mode_comment</span>
-              <span class="material-symbols-outlined">send</span>
-            </div>
-            <div>
-              <span class="material-symbols-outlined">bookmark</span>
-            </div>
-          </div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px">춘식이 <b> 위 19명</b>이 좋아합니다</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 16px"><b>jin.99</b> 요줌에 해외여행을 못가니 재주도 많이 갑니다.</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>aaaa</b> 나도 재주도 가고 십다</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>bbbb</b> 재주도에 외국인 관광객이 없어서 놀러가기 좋다던데..
-          </div>
-          <div style="border-top: solid 1px #ced4da;">
-            <input type="text" class="form-control" style="box-shadow: none;border: none" placeholder="댓글 달기..">
-          </div>
-        </div>
-      </div>
-      <div class="feed_box">
-        <div style="border: solid 1px #ced4da; background-color: white;">
-          <div style="display: flex; flex-direction: row; align-items: center; margin: 0 20px">
-            <div class="box" style="background: #bdbdbd">
-              <img class="profile"
-                src="http://file3.instiz.net/data/file3/2021/05/31/e/b/8/eb8d9ad2d779ca2a0b7acc2b67694a23.png" alt="">
-            </div>
-            <div>
-              jin.99
-            </div>
-          </div>
-          <div class="imgbox">
-            <img class="imgfit"
-              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/fh3flanm7yzaphwoteu0/Jeju%20Island%20UNESCO%20Day%20Tour%20with%20Hotel%20Pick%20Up.jpg">
-          </div>
-          <div style="margin: 0 20px; display: flex; flex-direction: row; justify-content: space-between">
-            <div>
-              <span class="material-symbols-outlined">favorite</span>
-              <span class="material-symbols-outlined">mode_comment</span>
-              <span class="material-symbols-outlined">send</span>
-            </div>
-            <div>
-              <span class="material-symbols-outlined">bookmark</span>
-            </div>
-          </div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px">춘식이 <b> 위 19명</b>이 좋아합니다</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 16px"><b>jin.99</b> 요줌에 해외여행을 못가니 재주도 많이 갑니다.</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>aaaa</b> 나도 재주도 가고 십다</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>bbbb</b> 재주도에 외국인 관광객이 없어서 놀러가기 좋다던데..
-          </div>
-          <div style="border-top: solid 1px #ced4da;">
-            <input type="text" class="form-control" style="box-shadow: none;border: none" placeholder="댓글 달기..">
-          </div>
-        </div>
-      </div>
-      <div class="feed_box">
-        <div style="border: solid 1px #ced4da; background-color: white;">
-          <div style="display: flex; flex-direction: row; align-items: center; margin: 0 20px">
-            <div class="box" style="background: #bdbdbd">
-              <img class="profile"
-                src="http://file3.instiz.net/data/file3/2021/05/31/e/b/8/eb8d9ad2d779ca2a0b7acc2b67694a23.png" alt="">
-            </div>
-            <div>
-              jin.99
-            </div>
-          </div>
-          <div class="imgbox">
-            <img class="imgfit"
-              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/fh3flanm7yzaphwoteu0/Jeju%20Island%20UNESCO%20Day%20Tour%20with%20Hotel%20Pick%20Up.jpg">
-          </div>
-          <div style="margin: 0 20px; display: flex; flex-direction: row; justify-content: space-between">
-            <div>
-              <span class="material-symbols-outlined">favorite</span>
-              <span class="material-symbols-outlined">mode_comment</span>
-              <span class="material-symbols-outlined">send</span>
-            </div>
-            <div>
-              <span class="material-symbols-outlined">bookmark</span>
-            </div>
-          </div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px">춘식이 <b> 위 19명</b>이 좋아합니다</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 16px"><b>jin.99</b> 요줌에 해외여행을 못가니 재주도 많이 갑니다.</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>aaaa</b> 나도 재주도 가고 십다</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>bbbb</b> 재주도에 외국인 관광객이 없어서 놀러가기 좋다던데..
-          </div>
-          <div style="border-top: solid 1px #ced4da;">
-            <input type="text" class="form-control" style="box-shadow: none;border: none" placeholder="댓글 달기..">
-          </div>
-        </div>
-      </div>
-      <div class="feed_box">
-        <div style="border: solid 1px #ced4da; background-color: white;">
-          <div style="display: flex; flex-direction: row; align-items: center; margin: 0 20px">
-            <div class="box" style="background: #bdbdbd">
-              <img class="profile"
-                src="http://file3.instiz.net/data/file3/2021/05/31/e/b/8/eb8d9ad2d779ca2a0b7acc2b67694a23.png" alt="">
-            </div>
-            <div>
-              jin.99
-            </div>
-          </div>
-          <div class="imgbox">
-            <img class="imgfit"
-              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/fh3flanm7yzaphwoteu0/Jeju%20Island%20UNESCO%20Day%20Tour%20with%20Hotel%20Pick%20Up.jpg">
-          </div>
-          <div style="margin: 0 20px; display: flex; flex-direction: row; justify-content: space-between">
-            <div>
-              <span class="material-symbols-outlined">favorite</span>
-              <span class="material-symbols-outlined">mode_comment</span>
-              <span class="material-symbols-outlined">send</span>
-            </div>
-            <div>
-              <span class="material-symbols-outlined">bookmark</span>
-            </div>
-          </div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px">춘식이 <b> 위 19명</b>이 좋아합니다</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 16px"><b>jin.99</b> 요줌에 해외여행을 못가니 재주도 많이 갑니다.</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>aaaa</b> 나도 재주도 가고 십다</div>
-          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>bbbb</b> 재주도에 외국인 관광객이 없어서 놀러가기 좋다던데..
-          </div>
-          <div style="border-top: solid 1px #ced4da;">
-            <input type="text" class="form-control" style="box-shadow: none;border: none" placeholder="댓글 달기..">
-          </div>
-        </div>
-      </div>
 
+      <!--FeedBox Start-->
+      {% for feed in feeds %}
+      <div class="feed_box">
+        <div style="border: solid 1px #ced4da; background-color: white;">
+          <div style="display: flex; flex-direction: row; align-items: center; margin: 0 20px">
+            <div class="box" style="background: #bdbdbd">
+              <img class="profile"
+                src="{{ feed.profile_image }}" alt="">
+            </div>
+            <div>
+              {{ feed.user_id }}
+            </div>
+          </div>
+          <div class="imgbox">
+            <img class="imgfit"
+              src="{{ feed.image }}">
+          </div>
+          <div style="margin: 0 20px; display: flex; flex-direction: row; justify-content: space-between">
+            <div>
+              <span class="material-symbols-outlined">favorite</span>
+              <span class="material-symbols-outlined">mode_comment</span>
+              <span class="material-symbols-outlined">send</span>
+            </div>
+            <div>
+              <span class="material-symbols-outlined">bookmark</span>
+            </div>
+          </div>
+          <div style=" margin: 0 20px; text-align: left; font-size: 14px">춘식이 <b> 위 {{ fedd.like_count }}명</b>이 좋아합니다</div>
+          <div style=" margin: 0 20px; text-align: left; font-size: 16px"><b>{{ feed.user_id }}</b> {{ feed.content }}</div>
+          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>aaaa</b> 나도 재주도 가고 십다</div>
+          <div style=" margin: 0 20px; text-align: left; font-size: 14px"><b>bbbb</b> 재주도에 외국인 관광객이 없어서 놀러가기 좋다던데..
+          </div>
+          <div style="border-top: solid 1px #ced4da;">
+            <input type="text" class="form-control" style="box-shadow: none;border: none" placeholder="댓글 달기..">
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <!--FeedBox End-->
 
 
     </div>
@@ -330,7 +174,7 @@
             <div style=" color: gray; font-size: 14px;">
               나랑 갇이 치킨 먹음
             </div>
-          </div>  
+          </div>
         </div>
         <div>
           <a href="#" style="font-size: 14px; text-decoration:none; font-weight:bold">팔로우</a>
@@ -349,7 +193,7 @@
             <div style=" color: gray; font-size: 14px;">
               나랑 갇이 치킨 먹음
             </div>
-          </div>  
+          </div>
         </div>
         <div>
           <a href="#" style="font-size: 14px; text-decoration:none; font-weight:bold">팔로우</a>
@@ -369,7 +213,7 @@
             <div style=" color: gray; font-size: 14px;">
               나랑 갇이 치킨 먹음
             </div>
-          </div>  
+          </div>
         </div>
         <div>
           <a href="#" style="font-size: 14px; text-decoration:none; font-weight:bold">팔로우</a>
@@ -389,7 +233,7 @@
             <div style=" color: gray; font-size: 14px;">
               나랑 갇이 치킨 먹음
             </div>
-          </div>  
+          </div>
         </div>
         <div>
           <a href="#" style="font-size: 14px; text-decoration:none; font-weight:bold">팔로우</a>
@@ -409,13 +253,14 @@
             <div style=" color: gray; font-size: 14px;">
               나랑 갇이 치킨 먹음
             </div>
-          </div>  
+          </div>
         </div>
         <div>
           <a href="#" style="font-size: 14px; text-decoration:none; font-weight:bold">팔로우</a>
         </div>
       </div>
-      <div style=" margin-top: 40px; font-size: 12px; color: gray; text-align: left">소개 도운말 홍부센터 API <br> 개인정보처리뱡침 약관 위치 인기 계정 해시태그 언어 </div>
+      <div style=" margin-top: 40px; font-size: 12px; color: gray; text-align: left">소개 도운말 홍부센터 API <br> 개인정보처리뱡침 약관 위치
+        인기 계정 해시태그 언어 </div>
       <div style=" margin-top: 20px; font-size: 12px; color: gray; text-align: left"> 2021 인스타그램 프롬 패이스북 </div>
 
     </div>
